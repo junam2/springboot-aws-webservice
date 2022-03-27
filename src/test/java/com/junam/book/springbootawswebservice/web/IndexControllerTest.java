@@ -21,6 +21,6 @@ public class IndexControllerTest {
     public void loadingMainPage() {
         String body = restTemplate.getForObject("/", String.class);
 
-        assertThat(body).contains("시작!");
+        assertThat(body).contains("스프링부트 웹서비스");
     }
 }
